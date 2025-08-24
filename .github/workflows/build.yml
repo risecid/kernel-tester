@@ -24,6 +24,11 @@ jobs:
         run: |
           git clone --depth=1 https://github.com/Neternels/android_kernel_xiaomi_msm8937 -b 11.0 kernel-source
 
+      - name: Inject KernelSU-Next
+        run: |
+          cd $GITHUB_WORKSPACE
+          curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -
+
       - name: Build kernel
         run: |
           export KBUILD_BUILD_USER="risecid"
