@@ -26,7 +26,7 @@ jobs:
 
       - name: Inject KernelSU-Next
         run: |
-          cd $GITHUB_WORKSPACE
+          cd kernel-source
           curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -
 
       - name: Build kernel
