@@ -27,7 +27,7 @@ jobs:
       - name: Inject KernelSU-Next
         run: |
           cd kernel-source
-          curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -
+          curl -LSs "https://raw.githubusercontent.com/ThRE-Team/KernelSU-Next/refs/heads/next-time-susfs/kernel/setup.sh" | bash -s next-time-susfs
 
       - name: Build kernel
         run: |
