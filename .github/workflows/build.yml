@@ -25,7 +25,7 @@ jobs:
           export CROSS_COMPILE=$GITHUB_WORKSPACE/aarch64-linux-android-4.9/bin/aarch64-linux-android-
           cd kernel-source
           mkdir ../out
-          make O=../out vendor/santoni_neternels_defconfig
+          make O=../out vendor/santoni_neternels_defconfig_a10
           make O=../out prepare
           make O=../out modules_prepare
 
